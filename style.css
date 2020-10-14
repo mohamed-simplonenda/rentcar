@@ -1,8 +1,8 @@
 .bodyy
 {
   width: 100%;
-  overflow-x: hidden; //horizontal
-    overflow-y: scroll; //vertical
+  overflow-x: hidden; 
+    overflow-y: scroll; 
 }
 
 ul {
@@ -50,30 +50,31 @@ ul {
 .flex-container {
     padding-left: 140px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border-color: black;
     margin: 35px 35px 35px 35px;
-	
-}
+    flex-grow: 4;
+  }
 .flex-container1 {
   padding-left: 260px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   border-color: black;
+  flex-grow: 4;
 }
 .flex-container2 {
     
   display: flex;
   align-items: baseline;
   justify-content: space-around;
-  
+  flex-grow: 3;
   color: black;
   height: 100;
  
 }
     .bouton{
-      text-align: center;
-      top: 400px;
+      position: center;
+      width: 100%;
       
 
     }
@@ -86,12 +87,12 @@ ul {
     }
     
     .reserv{
-      text-align: center;
-      opacity: 1.5;
+     
+      
         position: absolute;
         z-index: 1;
-        top: 200px;
-        left: 30px;
+        top: 150px;
+        left: 200px;
         color:white;
         border: solid;
         opacity: 1;
@@ -103,9 +104,10 @@ ul {
       
         position: absolute;
         z-index: 1;
-        top: 180px;
-        left: 50px;
+        top: 80px;
+        left: 520px;
         color: white;
+        font-size: 20px;
     }
     .img{
       z-index: 2;
@@ -125,22 +127,59 @@ ul {
         z-index: 1;
         border-radius: 5px;
         padding: 20px;
-        top: 160px;
-        left: 30px;
-        color:white
+        top: 120px;
+        left: 400px;
+        color:white;
+      text-align: left;  
+  
+  margin: 8px 10px 8px 10px;
+  border: solid;
 
+      }
+      input[type=text] {
+        width: 100%;
+        padding: right;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      input[type=email] {
+        width: 100%;
+        padding: right;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      input[type=tel] {
+        width: 100%;
+        padding: right;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      select{
+        width: 40%;
+        padding: right;
+        margin: 8px 0;
+        box-sizing: border-box;  
+      }
+      input[type=date] {
+        width: 52%;
+        padding: right;
+        margin: 8px 0;
+        box-sizing: border-box;
       }
      
         
       
       .shadow{
         box-shadow: 1px 1px 1px 1px black;
+        flex-grow: 3;
+        width:200px;
+         height:150px ;
         
     }
     .car{
       font-family: 'Courier New', Courier, monospace;
       font-style: italic;
-      flex-grow:3;
+     
     }
     
     footer {
